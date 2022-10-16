@@ -1,0 +1,40 @@
+.nav {
+  display: flex;
+  align-items: center;
+
+  &__item:not(:first-child) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    margin-left: 50px;
+  }
+
+  &__link {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link.link.current {
+    position: relative;
+    color: var(--accent-color);
+  }
+
+  &__link.link.current::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    height: 4px;
+    width: 100%;
+    background: var(--accent-color);
+    border-radius: 2px;
+  }
+}
