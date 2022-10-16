@@ -40,8 +40,8 @@
   top: 50%;
   left: 50%;
   padding: 40px 40px;
-  width: 530px;
-  height: 580px;
+  width: 450px;
+  height: 609px;
   background: var(--primary-title-color);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
@@ -58,12 +58,12 @@
 }
 
 .modal-title {
-  width: 448px;
-  height: 23px;
+  width: 370px;
+  height: 60px;
   margin-bottom: 12px;
   color: var(--primary-text-color);
   font-size: 20px;
-  line-height: 0.86;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -187,8 +187,8 @@
 .checkbox-title {
   display: flex;
   align-items: center;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }

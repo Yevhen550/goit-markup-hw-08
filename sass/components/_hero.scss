@@ -1,23 +1,24 @@
 .hero {
-  width: 1600px;
+  width: 480px;
   margin-left: auto;
   margin-right: auto;
   background-color: #c4c4c4;
   background-image: url(../images/index/Img\ Overlay.png),
     url(../images/index/hero.jpg);
-  padding: 200px 0;
+  padding: 118px 0;
   text-align: center;
   background-size: cover;
 
   &__title {
     color: var(--primary-title-color);
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
+    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin: 0 auto 30px;
-    max-width: 696px;
+    max-width: 360px;
   }
 
   &__btn {
