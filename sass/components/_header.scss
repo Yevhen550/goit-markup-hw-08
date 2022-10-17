@@ -124,6 +124,11 @@
     fill: var(--accent-color);
   }
 
+  &__link--font-mail:hover svg,
+  &__link--font-mail:focus svg {
+    fill: var(--accent-color);
+  }
+
   &__contact:not(:last-child) {
     margin-bottom: 32px;
   }
