@@ -6,6 +6,14 @@
     letter-spacing: 0.02em;
     &:not(:first-child) {
       margin-top: 35px;
+
+      @media screen and (min-width: 768px) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        margin-left: 50px;
+      }
     }
   }
 
@@ -22,6 +30,11 @@
   &__link.link.current {
     // position: relative;
     color: var(--accent-color);
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+    }
   }
 
   // &__link.link.current::after {
