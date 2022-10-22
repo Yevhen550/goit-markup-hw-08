@@ -1,6 +1,14 @@
 .about {
   padding-top: 47px;
-  padding-bottom: 60px;
+  padding-bottom: 94px;
+
+  @media screen and (max-width: 767px), (max-width: 1199px) {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+  }
 
   &__title {
     font-weight: 700;
@@ -32,11 +40,5 @@
     text-transform: uppercase;
     color: #ffffff;
     background: rgba(47, 48, 58, 0.8);
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .about {
-    display: none;
   }
 }

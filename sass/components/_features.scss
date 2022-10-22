@@ -2,6 +2,20 @@
   padding-top: 60px;
   padding-bottom: 47px;
 
+  &__list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding: 94px 0;
+    }
+  }
+
+  &__item {
+  }
+
   &__box {
     display: flex;
     align-items: center;
@@ -11,6 +25,10 @@
     background: var(--moz-background-team);
     border-radius: 4px;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
   }
 
   &__pretitle {
@@ -26,6 +44,12 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      margin: 0 auto 10px 0;
+      text-align: left;
+    }
   }
 
   &__text {
@@ -34,5 +58,9 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
   }
 }

@@ -3,8 +3,28 @@
   background-color: var(--moz-background-team);
   padding: 60px 0;
 
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-content: space-between;
+    }
+  }
+
   &__title {
-    font-weight: 700;
     font-size: 28px;
     line-height: 1.17;
     text-align: center;
@@ -20,6 +40,9 @@
 
     &:not(:last-child) {
       margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
     }
   }
 }

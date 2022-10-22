@@ -3,19 +3,15 @@
   margin-left: auto;
   margin-right: auto;
   background-color: #c4c4c4;
-  background-image: url(../images/index/Img\ Overlay.png),
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
     url(../images/hero/hero-mob-1x-480.jpg);
   padding: 118px 0;
   text-align: center;
   background-size: cover;
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
-      background-image: url(../images/hero/hero-mob-2x-960.jpg);
-    }
-  }
 
   &__title {
     color: var(--primary-title-color);
@@ -45,5 +41,14 @@
   &__btn:hover,
   &__btn:focus {
     background-color: var(--background-color-btn);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/index/Img\ Overlay.png),
+      url(../images/hero/hero-tab-1x-768.jpg);
   }
 }

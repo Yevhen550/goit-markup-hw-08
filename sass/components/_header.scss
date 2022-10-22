@@ -7,8 +7,13 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-  margin-right: 93px;
-  display: block;
+  display: inline-block;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1.16;
+    margin-right: 87px;
+  }
 
   &__title {
     color: var(--accent-color);
@@ -23,17 +28,31 @@
   padding-bottom: 16px;
   display: block;
   border-bottom: 1px solid var(--border-bottom-color);
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    height: 80px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+
+    &-container {
+      display: flex;
+    }
+  }
 }
 
 .header-menu {
-  background-color: var(--primary-title-color);
-
   @media screen and (max-width: 767px) {
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     display: none;
+    background-color: var(--primary-title-color);
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
 
     &.is-open {
       display: block;
@@ -100,6 +119,10 @@
 .header-list {
   margin-top: 302px;
   margin-bottom: 64px;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
 
   &__link {
     font-weight: 500;
