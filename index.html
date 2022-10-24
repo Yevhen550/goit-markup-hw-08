@@ -42,6 +42,24 @@
         </svg>
       </button>
       <div class="header-menu" id="header-menu" data-menu>
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="header-menu"
+          data-menu-button
+        >
+          <svg
+            width="24px"
+            height="16px"
+            aria-label="Перемикач мобільного меню"
+          >
+            <use
+              class="icon-crose"
+              href="./images/svg/icons.svg#icon-crose"
+            ></use>
+          </svg>
+        </button>
         <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
@@ -61,7 +79,11 @@
               class="header-list__link--font-mail link"
               href="mailto:info@devstudio.com"
             >
-              <svg class="header-list__icon" width="14px" height="10px">
+              <svg
+                class="header-list__icon header-mail"
+                width="14px"
+                height="10px"
+              >
                 <use href="./images/svg/icons.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a
@@ -69,7 +91,11 @@
           </li>
           <li class="header-list__contact">
             <a class="header-list__link link" href="tel:+380961111111">
-              <svg class="header-list__icon" width="10px" height="14px">
+              <svg
+                class="header-list__icon header-tel"
+                width="10px"
+                height="14px"
+              >
                 <use href="./images/svg/icons.svg#icon-phone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -175,7 +201,8 @@
             <li class="about__item">
               <div class="about__box">
                 <img
-                  src="./images/index/box1.jpg"
+                  srcset="./images/box/box1.jpg 1x, ./images/box/box1@2x.jpg 2x"
+                  src="./images/box/box1.jpg"
                   alt="Написання коду на клавіатурі"
                   width="370"
                 />
@@ -185,7 +212,8 @@
             <li class="about__item">
               <div class="about__box">
                 <img
-                  src="./images/index/box2.jpg"
+                  srcset="./images/box/box2.jpg 1x, ./images/box/box2@2x.jpg 2x"
+                  src="./images/box/box2.jpg"
                   alt="Телефон в руці"
                   width="370"
                 />
@@ -195,7 +223,8 @@
             <li class="about__item">
               <div class="about__box">
                 <img
-                  src="./images/index/box3.jpg"
+                  srcset="./images/box/box3.jpg 1x, ./images/box/box3@2x.jpg 2x"
+                  src="./images/box/box3.jpg"
                   alt="Малюнок на планшеті"
                   width="370"
                 />
@@ -214,18 +243,18 @@
             <li class="team__item">
               <img
                 srcset="
-                  ./images/igor/igor-deskt-1x-270.jpg 1x,
-                  ./images/igor/igor-tab-1x-354.jpg   1x,
-                  ./images/igor/igor-mob-1x-450.jpg   1x,
-                  ./images/igor/igor-deskt-2x-540.jpg 2x,
-                  ./images/igor/igor-tab-2x-708.jpg   2x,
-                  ./images/igor/igor-mob-2x-900.jpg   2x
+                  ./images/igor/igor-deskt-1x-270.jpg 270w,
+                  ./images/igor/igor-tab-1x-354.jpg   354w,
+                  ./images/igor/igor-mob-1x-450.jpg   450w,
+                  ./images/igor/igor-deskt-2x-540.jpg 540w,
+                  ./images/igor/igor-tab-2x-708.jpg   708w,
+                  ./images/igor/igor-mob-2x-900.jpg   900w
                 "
                 src="./images/index/igor.jpg"
                 alt="igor"
-                width="450"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                class="member-image"
               />
-
               <div class="team-card">
                 <h3 class="team-card__pretitle">Ігор Дем'яненко</h3>
                 <p class="team-card__description">Product Designer</p>
@@ -273,16 +302,17 @@
             <li class="team__item">
               <img
                 srcset="
-                  ./images/olga/olga-deskt-1x-270.jpg 1x,
-                  ./images/olga/olga-tab-1x-354.jpg   1x,
-                  ./images/olga/olga-mob-1x-450.jpg   1x,
-                  ./images/olga/olga-deskt-2x-540.jpg 2x,
-                  ./images/olga/olga-tab-2x-708.jpg   2x,
-                  ./images/olga/olga-mob-2x-900.jpg   2x
+                  ./images/olga/olga-deskt-1x-270.jpg 270w,
+                  ./images/olga/olga-tab-1x-354.jpg   354w,
+                  ./images/olga/olga-mob-1x-450.jpg   450w,
+                  ./images/olga/olga-deskt-2x-540.jpg 540w,
+                  ./images/olga/olga-tab-2x-708.jpg   708w,
+                  ./images/olga/olga-mob-2x-900.jpg   900w
                 "
                 src="./images/index/olga.jpg"
                 alt="olga"
-                width="450"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                class="member-image"
               />
               <div class="team-card">
                 <h3 class="team-card__pretitle">Ольга Рєпіна</h3>
@@ -331,16 +361,17 @@
             <li class="team__item">
               <img
                 srcset="
-                  ./images/mikola/mik-deskt-1x-270.jpg 1x,
-                  ./images/mikola/mik-tab-1x-354.jpg   1x,
-                  ./images/mikola/mik-mob-1x-450.jpg   1x,
-                  ./images/mikola/mik-deskt-2x-540.jpg 2x,
-                  ./images/mikola/mik-tab-2x-708.jpg   2x,
-                  ./images/mikola/mik-mob-2x-900.jpg   2x
+                  ./images/mikola/mik-deskt-1x-270.jpg 270w,
+                  ./images/mikola/mik-tab-1x-354.jpg   354w,
+                  ./images/mikola/mik-mob-1x-450.jpg   450w,
+                  ./images/mikola/mik-deskt-2x-540.jpg 540w,
+                  ./images/mikola/mik-tab-2x-708.jpg   708w,
+                  ./images/mikola/mik-mob-2x-900.jpg   900w
                 "
                 src="./images/index/mikola.jpg"
                 alt="mikola"
-                width="450"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                class="member-image"
               />
               <div class="team-card">
                 <h3 class="team-card__pretitle">Микола Тарасов</h3>
@@ -389,16 +420,17 @@
             <li class="team__item">
               <img
                 srcset="
-                  ./images/mihaylo/miha-deskt-1x-270.jpg 1x,
-                  ./images/mihaylo/miha-tab-1x-354.jpg   1x,
-                  ./images/mihaylo/miha-mob-1x-450.jpg   1x,
-                  ./images/mihaylo/miha-deskt-2x-540.jpg 2x,
-                  ./images/mihaylo/miha-tab-2x-708.jpg   2x,
-                  ./images/mihaylo/miha-mob-2x-900.jpg   2x
+                  ./images/mihaylo/miha-deskt-1x-270.jpg 270w,
+                  ./images/mihaylo/miha-tab-1x-354.jpg   354w,
+                  ./images/mihaylo/miha-mob-1x-450.jpg   450w,
+                  ./images/mihaylo/miha-deskt-2x-540.jpg 540w,
+                  ./images/mihaylo/miha-tab-2x-708.jpg   708w,
+                  ./images/mihaylo/miha-mob-2x-900.jpg   900w
                 "
                 src="./images/index/muchaylo.jpg"
                 alt="muchaylo"
-                width="450"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                class="member-image"
               />
               <div class="team-card">
                 <h3 class="team-card__pretitle">Михайло Єрмаков</h3>

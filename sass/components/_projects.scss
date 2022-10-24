@@ -8,7 +8,8 @@
     width: calc((100% - 60px) / 3);
   }
 
-  &__item:hover .projects-list__text {
+  &__item:hover .projects-list__text,
+  &__item:focus-within .projects-list__text {
     transform: translateY(0);
   }
 

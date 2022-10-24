@@ -1,18 +1,10 @@
 .footer {
-  max-width: 1600px;
+  max-width: 100%;
   min-width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
   color: var(--primary-title-color);
   background-color: var(--background-color-hero);
-
-  @media screen and (min-width: 768px) {
-    max-width: 1600px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    max-width: 1600px;
-  }
 
   &-container {
     @media screen and (min-width: 768px) {
@@ -32,6 +24,7 @@
 
   &-first {
     @media screen and (min-width: 768px) {
+      margin-bottom: 60px;
       width: 232px;
     }
   }
@@ -74,7 +67,6 @@
 
 .address-list {
   list-style: none;
-  margin-bottom: 60px;
 
   @media screen and (min-width: 768px) {
   }
@@ -213,6 +205,12 @@
     width: 573px;
   }
 
+  &__form {
+    @media (min-width: 1200px) {
+      display: flex;
+    }
+  }
+
   &__title {
     display: flex;
     justify-content: center;
@@ -222,6 +220,11 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 20px;
+
+    @media (min-width: 768px) {
+      text-align: center;
+      display: block;
+    }
 
     @media (min-width: 1200px) {
       display: inline-block;
@@ -244,7 +247,6 @@
 
     @media (min-width: 1200px) {
       margin: 0;
-      width: 329px;
     }
   }
 

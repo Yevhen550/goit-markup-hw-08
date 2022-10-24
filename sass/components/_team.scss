@@ -1,14 +1,14 @@
 .team {
-  width: 480px;
+  max-width: 100%;
   background-color: var(--moz-background-team);
   padding: 60px 0;
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    max-width: 100%;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    max-width: 100%;
     padding: 94px 0;
   }
 

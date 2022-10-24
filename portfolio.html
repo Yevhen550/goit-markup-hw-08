@@ -21,12 +21,28 @@
   <body>
     <!-- Шапка -->
 
-    <header class="header">
-      <div class="container header-container">
+    <header class="header container">
+      <!-- <div class="container header-container"> -->
+      <a href="./index.html" class="logo">
+        <span class="logo__title">Web</span>Studio</a
+      >
+      <button
+        type="button"
+        class="menu-button"
+        aria-expanded="false"
+        aria-controls="header-menu"
+        data-menu-button
+      >
+        <svg width="24px" height="16px" aria-label="Перемикач мобільного меню">
+          <use
+            class="icon-crose"
+            href="./images/svg/icons.svg#icon-crose"
+          ></use>
+          <use class="icon-menu" href="./images/svg/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <div class="header-menu" id="header-menu" data-menu>
         <nav class="nav">
-          <a href="./index.html" class="logo">
-            <span class="logo__title">Web</span>Studio</a
-          >
           <ul class="nav__list list">
             <li class="nav__item">
               <a href="./index.html" class="nav__link link">Студія</a>
@@ -43,8 +59,15 @@
         </nav>
         <ul class="header-list list">
           <li class="header-list__contact">
-            <a class="header-list__link link" href="mailto:info@devstudio.com">
-              <svg class="header-list__icon" width="16px" height="12px">
+            <a
+              class="header-list__link--font-mail link"
+              href="mailto:info@devstudio.com"
+            >
+              <svg
+                class="header-list__icon header-mail"
+                width="14px"
+                height="10px"
+              >
                 <use href="./images/svg/icons.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a
@@ -52,14 +75,39 @@
           </li>
           <li class="header-list__contact">
             <a class="header-list__link link" href="tel:+380961111111">
-              <svg class="header-list__icon" width="10px" height="16px">
+              <svg
+                class="header-list__icon header-tel"
+                width="10px"
+                height="14px"
+              >
                 <use href="./images/svg/icons.svg#icon-phone"></use>
               </svg>
               +38 096 111 11 11</a
             >
           </li>
         </ul>
+        <ul class="header-mobile-link list">
+          <li class="mobile-item">
+            <a href="https://www.instagram.com" class="mobile-link link"
+              >Instagram</a
+            >
+          </li>
+          <li class="mobile-item">
+            <a href="https://twitter.com" class="mobile-link link">Twitter</a>
+          </li>
+          <li class="mobile-item">
+            <a href="https://www.facebook.com" class="mobile-link link"
+              >Facebook</a
+            >
+          </li>
+          <li class="mobile-item">
+            <a href="https://www.linkedin.com" class="mobile-link link"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
       </div>
+      <!-- </div> -->
     </header>
 
     <!-- Основний контент -->
