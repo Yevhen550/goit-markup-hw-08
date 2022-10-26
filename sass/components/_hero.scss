@@ -6,7 +6,6 @@
   text-align: center;
   max-width: 100vw;
   min-width: 480px;
-  height: 400px;
   margin: 0 auto;
   background-color: #c4c4c4;
   background-image: linear-gradient(
@@ -51,7 +50,7 @@
   }
 
   @media (min-width: 768px) {
-    max-width: 100%;
+    max-width: 1600px;
     background-image: linear-gradient(
         to right,
         rgb(47, 48, 58, 0.4),
@@ -69,6 +68,10 @@
         ),
         url("../images/hero/hero-deskt-2x-3200.jpg");
     }
+  }
+
+  @media (min-width: 1200px) {
+    padding: 200px 0;
   }
 
   &__title {

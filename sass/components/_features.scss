@@ -29,6 +29,10 @@
     }
   }
 
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
   &__box {
     display: flex;
     align-items: center;
@@ -49,11 +53,7 @@
   }
 
   &__pretitle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    width: 450px;
+    text-align: center;
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -64,9 +64,8 @@
 
     @media screen and (min-width: 768px) {
       display: block;
-      margin: 0 auto 10px 0;
+      margin-bottom: 10px;
       text-align: left;
-      width: 354px;
     }
   }
 
